@@ -19,13 +19,11 @@ const jadwalBelajar = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-5xl space-y-8 px-4 py-10">
-      {/* Bagian Atas (Foto & Nama) */}
       <Hero
         nama="Qurrotul A'yun"
         tagline="Siswi kelas XI PPLG, calon Junior Web Developer di Kelas Industri UBIG."
       />
 
-      {/* Bagian Tentang Saya */}
       <Kartu judul="Tentang Saya">
         <p className="leading-relaxed text-gray-700">
           Saya siswi kelas XI jurusan PPLG yang senang mencoba hal baru di dunia teknologi dan desain. 
@@ -33,7 +31,6 @@ export default function Home() {
         </p>
       </Kartu>
 
-      {/* Bagian Hobi & Cita-cita (2 Kolom Berdampingan) */}
       <div className="grid gap-6 md:grid-cols-2">
         <Kartu judul="Hobi">
           <ul className="list-disc space-y-1 pl-5 text-gray-700">
@@ -42,6 +39,7 @@ export default function Home() {
             <li>Memasak</li>
             <li>Baking</li>
             <li>Dance</li>
+            <li>Mendengarkan musik</li>
             <li>Menyanyi</li>
             <li>Menggambar</li>
             <li>Membuat kerajinan tangan</li>
@@ -61,7 +59,6 @@ export default function Home() {
 </Kartu>
       </div>
 
-      {/* Bagian Keahlian (Dibungkus komponen Kartu agar seragam dengan Gambar 6.17) */}
       <Kartu judul="Keahlian">
         <div className="grid gap-4 md:grid-cols-3">
           {skills.map((skill) => (
