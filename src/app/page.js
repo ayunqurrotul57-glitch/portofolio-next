@@ -1,6 +1,8 @@
+import Link from "next/link";
 import Hero from "@/components/Hero";
-import Kartu from "@/components/kartu";
+import ProyekCard from "@/components/ProyekCard";
 import SkillCard from "@/components/SkillCard";
+import { proyek } from "@/data/proyek";
 
 const skills = [
   { nama: "HTML", level: "Menengah" },
@@ -10,11 +12,8 @@ const skills = [
   { nama: "JavaScript", level: "Dasar" },
 ];
 
-const jadwalBelajar = [
-  { hari: "Senin", waktu: "19.00 - 20.00", kegiatan: "Membaca ulang modul" },
-  { hari: "Rabu", waktu: "19.00 - 21.00", kegiatan: "Mengerjakan tugas praktik" },
-  { hari: "Jumat", waktu: "19.00- 21.30", kegiatan: "Menyelesaikan tugas tugas yang belum selesai"},
-];
+// Mengambil 3 proyek terakhir (sesuai Tabel 6.3)
+const proyekTerbaru = proyek.slice(-3);
 
 export default function Home() {
   return (
@@ -24,72 +23,28 @@ export default function Home() {
         tagline="Siswi kelas XI PPLG, calon Junior Web Developer di Kelas Industri UBIG."
       />
 
-      <Kartu judul="Tentang Saya">
-        <p className="leading-relaxed text-gray-700">
-          Saya siswi kelas XI jurusan PPLG yang senang mencoba hal baru di dunia teknologi dan desain. 
-          Saya ingin bisa membuat website yang rapi dan bermanfaat untuk sekolah maupun masyarakat sekitar.
-        </p>
-      </Kartu>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        <Kartu judul="Hobi">
-          <ul className="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Membaca</li>
-            <li>Menulis(puisi, cerpen, dll)</li>
-            <li>Memasak</li>
-            <li>Baking</li>
-            <li>Dance</li>
-            <li>Mendengarkan musik</li>
-            <li>Menyanyi</li>
-            <li>Menggambar</li>
-            <li>Membuat kerajinan tangan</li>
-          </ul>
-        </Kartu>
-
-        <Kartu judul="Cita-cita">
-  <p className="mb-3 text-gray-700">
-    Menjadi seorang Guru Informatika yang bermanfaat dan mampu membawa dampak positif bagi banyak orang. Langkah yang saya lakukan:
-  </p>
-  <ol className="list-decimal space-y-1 pl-5 text-gray-700">
-    <li>Tekun belajar dan mengasah skill pemrograman</li>
-    <li>Menjalani dan menyelesaikan Kelas Industri UBIG dengan maksimal</li>
-    <li>Lulus dengan nilai yang memuaskan</li>
-    <li>Melanjutkan studi ke jenjang S1 Pendidikan Teknologi Informasi</li>
-  </ol>
-</Kartu>
-      </div>
-
-      <Kartu judul="Keahlian">
+      {/* Bagian Keahlian */}
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold text-utama">Keahlian</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {skills.map((skill) => (
             <SkillCard key={skill.nama} nama={skill.nama} level={skill.level} />
           ))}
         </div>
-      </Kartu>
+      </section>
 
+      {/* Bagian Proyek Terbaru (Kode 6.3) */}
       <section className="mt-10">
-  <h2 className="mb-4 text-2xl font-bold text-utama">Jadwal Belajar</h2>
-  <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
-    <table className="w-full text-left text-sm">
-      <thead className="bg-utama text-white">
-        <tr>
-          <th className="px-6 py-4">Hari</th>
-          <th className="px-6 py-4">Waktu</th>
-          <th className="px-6 py-4">Kegiatan</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-gray-100">
-        {jadwalBelajar.map((jadwal, index) => (
-          <tr key={index}>
-            <td className="px-6 py-4">{jadwal.hari}</td>
-            <td className="px-6 py-4">{jadwal.waktu}</td>
-            <td className="px-6 py-4">{jadwal.kegiatan}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</section>
+        <h2 className="mb-4 text-2xl font-bold text-utama">Proyek Terbaru</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          {proyekTerbaru.map((item) => (
+            <ProyekCard key={item.slug} proyek={item} />
+          ))}
+        </div>
+        <Link href="/proyek" className="mt-6 inline-block rounded-lg bg-utama px-5 py-2 font-semibold text-white">
+          Lihat semua proyek
+        </Link>
+      </section>
     </main>
   );
 }
