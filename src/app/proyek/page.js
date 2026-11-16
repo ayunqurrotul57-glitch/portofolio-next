@@ -1,4 +1,4 @@
-import ProyekCard from "@/components/ProyekCard";
+import ProyekCard from "@/components/KartuProyek";
 import { proyek } from "@/data/proyek";
 
 export default function HalamanProyek() {

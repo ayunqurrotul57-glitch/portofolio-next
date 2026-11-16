@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import ProyekCard from "@/components/ProyekCard";
+import ProyekCard from "@/components/KartuProyek";
 import SkillCard from "@/components/SkillCard";
 import { proyek } from "@/data/proyek";
 
