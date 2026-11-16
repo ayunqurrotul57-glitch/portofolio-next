@@ -4,7 +4,7 @@ export default function Hero ({nama, tagline}) {
     return (
         <section className="flex flex-col items-center gap-6 text-center md:flex-row md:text-left">
             <img
-        src="/profile.png"
+        src="/foto-profile.jpeg"
         alt={`Foto profil ${nama}`}
         width={180}
         height={180}
