@@ -12,7 +12,6 @@ const skills = [
   { nama: "JavaScript", level: "Dasar" },
 ];
 
-// Mengambil 3 proyek terakhir (sesuai Tabel 6.3)
 const proyekTerbaru = proyek.slice(-3);
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         tagline="Siswi kelas XI PPLG, calon Junior Web Developer di Kelas Industri UBIG."
       />
 
-      {/* Bagian Keahlian */}
       <section className="mt-10">
         <h2 className="mb-4 text-2xl font-bold text-utama">Keahlian</h2>
         <div className="grid gap-4 md:grid-cols-3">
@@ -33,7 +31,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bagian Proyek Terbaru (Kode 6.3) */}
       <section className="mt-10">
         <h2 className="mb-4 text-2xl font-bold text-utama">Proyek Terbaru</h2>
         <div className="grid gap-6 md:grid-cols-3">
