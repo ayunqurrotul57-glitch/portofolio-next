@@ -64,17 +64,17 @@ export const proyek = [
             "Hasil ditampilkan di Console",
         ],
     },
-    {
-        slug: "soal-logika",
-        judul: "Lima Soal Logika",
-        kategori: "JavaScript",
-        minggu: "Minggu 06",
-        gambar: "/proyek/proyek-logika.png",
-        deskripsi: "Lima fungsi logika yang masing-masing diuji 3 masukan.",
+        {
+        slug: "web-eco",
+        judul: "Webstie Ecocycle",
+        kategori: "HTML-CSS-JavaScript",
+        minggu: "Saat kelas 10",
+        gambar: "/proyek/proyek-eco.png",
+        deskripsi: "Website yang dibuat saat kelas 10 untuk menyelesaikan tugas PLH berkelompok.",
         fitur: [
-            "Ganjil-genap, konversi suhu, dan nilai terbesar",
-            "Tahun kabisat dan harga setelah diskon",
-            "Setiap fungsi diuji dengan tiga masukan",
+            "Berisi artikel yang berbentuk buku majalah yang di flip",
+            "Terdapat Game Teka teki silang tentang kebersihan lingkungan dan pengelolaan sampah.",
+            "Galeri berisi dokumentasi kegiatan kebersihan lingkungan dan pengelolaan sampah serta video edukasi singkat.",
         ],
     },
 ];
