@@ -31,7 +31,7 @@ export const proyek = [
         kategori: "HTML, JavaSCript, CSS",
         minggu: "Minggu 03",
         gambar: "/proyek/ToDoList.PW.png",
-        deskripsi: "Membuat To Do List kedua, versi yang lebih lengkap (ada logo, dan tombol yang variatif.",
+        deskripsi: "Membuat To Do List kedua, versi yang lebih lengkap (ada logo, dan tombol yang variatif).",
         fitur: [
             "Bisa menambah catatan",
             "Bisa mengedit catatan",
