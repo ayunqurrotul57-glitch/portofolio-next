@@ -54,7 +54,7 @@ export const proyek = [
     },
     {
         slug: "Tampilan-To-Do-List",
-        judul: "To To List Sederhana",
+        judul: "To Do List Sederhana",
         kategori: "HTML, JavaScript, CSS",
         minggu: "Minggu 05",
         gambar: "/proyek/proyek-ToDoList.BS.png",
