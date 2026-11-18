@@ -57,7 +57,7 @@ export const proyek = [
         judul: "To Do List Sederhana",
         kategori: "HTML, JavaScript, CSS",
         minggu: "Minggu 05",
-        gambar: "/proyek/proyek-ToDoList.BS.png",
+        gambar: "/proyek/ToDoList.BS.png",
         deskripsi: "Membuat To Do List menggunakan JavaSCript dasar dan CSS.",
         fitur: [
             "Menambah catatan",
