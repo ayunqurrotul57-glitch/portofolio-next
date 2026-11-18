@@ -17,7 +17,7 @@ export const proyek = [
         judul: "SIMMAS",
         kategori: "Next.js",
         minggu: "Minggu 02",
-        gambar: "/proyek/proyek-simmas.png",
+        gambar: "/proyek/simmas.png",
         deskripsi: "Duplikasi tampilan dan fitur Website SIMMAS menggunakan Next.js",
         fitur: [
             "Dashboard user yang berbeda (sesuai role)",
@@ -30,7 +30,7 @@ export const proyek = [
         judul: "To Do List Sederhana",
         kategori: "HTML, JavaSCript, CSS",
         minggu: "Minggu 03",
-        gambar: "/proyek/proyek-ToDoList.PW.png",
+        gambar: "/proyek/ToDoList.PW.png",
         deskripsi: "Membuat To Do List kedua, versi yang lebih lengkap (ada logo, dan tombol yang variatif.",
         fitur: [
             "Bisa menambah catatan",
