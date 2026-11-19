@@ -5,7 +5,7 @@ export default function ProyekCard({ proyek }) {
   return (
     <Link
       href={`/proyek/${proyek.slug}`}
-      className="block overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition"
+      className="block overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition"
     >
       <Image
         src={proyek.gambar}
@@ -18,8 +18,8 @@ export default function ProyekCard({ proyek }) {
         <span className="inline-block rounded-full bg-green-50 px-2 py-1 text-xs font-semibold text-green-600 mb-2">
             {proyek.kategori}
         </span>
-        <h3 className="text-xl font-bold text-utama">{proyek.judul}</h3>
-        <p className="mt-2 text-sm text-gray-600 line-clamp-2">{proyek.deskripsi}</p>
+        <h3 className="text-xl font-bold text-utama dark:text-sky-200 dark:text-sky-200 dark:text-sky-200 dark:text-sky-200">{proyek.judul}</h3>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{proyek.deskripsi}</p>
       </div>
     </Link>
   );

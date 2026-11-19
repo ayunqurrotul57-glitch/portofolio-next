@@ -5,3 +5,14 @@
   --color-aksen: #C1121F;
   --color-latar: #F1FAEE;
 }
+
+body {
+  background-color: var(--color-latar);
+  color: #1f2937;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}

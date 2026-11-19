@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TombolTema from "@/components/TombolTema";
 
 const menu = [
     { href: "/", label: "Beranda" },
@@ -22,13 +23,10 @@ export default function Navbar () {
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
                     {menu.map((item) => {
                         let kelas = "text-gray-200 hover:text-white";
-                        
-                        // Ganti pengecekan menjadi startsWith
                         let aktif = pathname.startsWith(item.href);
                         if (item.href === "/") {
                             aktif = pathname === "/";
                         }
-                        
                         if (aktif) {
                             kelas = "font-bold text-white underline underline-offset-8";
                         }
@@ -41,6 +39,7 @@ export default function Navbar () {
                         );
                     })}
                 </ul>
+                <TombolTema />
             </nav>
         </header>
     );
