@@ -47,9 +47,9 @@ export default function Tentang() {
       </div>
 
       <section className="mt-10">
-        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200 dark:text-sky-200 dark:text-sky-200 dark:text-sky-200">Jadwal Belajar</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Jadwal Belajar</h2>
         <div className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-          <table className="w-full text-left text-sm">
+          <table className="w-full text-left text-sm text-white">
             <thead className="bg-utama text-white">
               <tr>
                 <th className="px-6 py-4">Hari</th>

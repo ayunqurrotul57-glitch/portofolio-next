@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 
 export default function TombolTema() {
     const [gelap, setGelap] = useState(false);
+    
 
-    // Dijalankan sekali setelah tombol tampil di browser: pakai tema yang tersimpan
     useEffect(() => {
         if (localStorage.getItem("tema") === "gelap") {
             document.documentElement.classList.add("dark");
-            setGelap(true); // <-- Pastikan state ikut diubah jadi true di sini
+            setGelap(true);
         }
     }, []);
 
