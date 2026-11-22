@@ -25,3 +25,13 @@ RLS aktif. Policy `Pengunjung boleh membaca proyek`: peran `anon`
 boleh `select` semua baris.
 ## Tabel `messages`
 Pesan dari form kontak.
+| Kolom | Tipe | Keterangan |
+| --- | --- | --- |
+| `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |
+| `created_at` | `timestamptz` | Waktu baris dibuat, terisi otomatis
+dengan `now()` |
+| `nama` | `text` | Nama pengirim |
+| `email` | `text` | Email pengirim |
+| `pesan` | `text` | Isi pesan |
+RLS aktif tanpa policy, sehingga pengunjung tidak bisa membaca
+pesan. Policy `insert` dibuat di Minggu 15.

@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Tabel `skills`
+Daftar keahlian Andi Pratama.
+| Kolom | Tipe | Keterangan |
+| --- | --- | --- |
+| `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |
+| `created_at` | `timestamptz` | Waktu baris dibuat, terisi otomatis
+dengan `now()` |
+| `nama` | `text` | Nama keahlian |
+| `level` | `text` | Dasar, Menengah, atau Mahir |
+RLS aktif. Policy `Pengunjung boleh membaca keahlian`: peran `anon`
+boleh `select` semua baris.
