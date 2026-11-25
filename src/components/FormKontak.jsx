@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const kelasInput = "mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 p-2 focus:ring-2 focus:ring-utama outline-none";
+const kelasInput = "mt-1 w-full rounded-lg border border-input bg-card p-2 focus:ring-2 focus:ring-utama outline-none";
 
 export default function FormKontak() {
     const [nama, setNama] = useState("");
@@ -38,7 +38,7 @@ export default function FormKontak() {
     return (
         <form onSubmit={kirim} noValidate className="space-y-4">
             <div>
-                <label htmlFor="nama" className="block font-semibold text-gray-800 dark:text-gray-100">Nama Lengkap</label>
+                <label htmlFor="nama" className="block font-semibold text-foreground:text-gray-100">Nama Lengkap</label>
                 <input
                     type="text"
                     id="nama"
@@ -47,10 +47,10 @@ export default function FormKontak() {
                     onChange={(e) => setNama(e.target.value)}
                     placeholder="Contoh: Min Yoongi"
                     className={kelasInput}/>
-                {error.nama && <p className="mt-1 text-sm text-aksen dark:text-red-300">{error.nama}</p>}
+                {error.nama && <p className="mt-1 text-sm text-aksen">{error.nama}</p>}
             </div>
             <div>
-                <label htmlFor="email" className="block font-semibold text-gray-800 dark:text-gray-100">Email</label>
+                <label htmlFor="email" className="block font-semibold text-foreground:text-gray-100">Email</label>
                 <input
                     type="email"
                     id="email"
@@ -59,10 +59,10 @@ export default function FormKontak() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="nama@email.com"
                     className={kelasInput}/>
-                {error.email && <p className="mt-1 text-sm text-aksen dark:text-red-300">{error.email}</p>}
+                {error.email && <p className="mt-1 text-sm text-aksen">{error.email}</p>}
             </div>
             <div>
-                <label htmlFor="hp" className="block font-semibold text-gray-800 dark:text-gray-100">Nomor HP</label>
+                <label htmlFor="hp" className="block font-semibold text-foreground:text-gray-100">Nomor HP</label>
                 <input
                     type="tel"
                     id="hp"
@@ -71,10 +71,10 @@ export default function FormKontak() {
                     onChange={(e) => setHp(e.target.value)}
                     placeholder="081234567890"
                     className={kelasInput}/>
-                {error.hp && <p className="mt-1 text-sm text-aksen dark:text-red-300">{error.hp}</p>}
+                {error.hp && <p className="mt-1 text-sm text-aksen">{error.hp}</p>}
             </div>
             <div>
-                <label htmlFor="keperluan" className="block font-semibold text-gray-800 dark:text-gray-100">Keperluan</label>
+                <label htmlFor="keperluan" className="block font-semibold text-foreground:text-gray-100">Keperluan</label>
                 <select
                     id="keperluan"
                     name="keperluan"
@@ -86,10 +86,10 @@ export default function FormKontak() {
                     <option value="kerjasama">Kerja Sama</option>
                     <option value="lainnya">Lainnya</option>
                 </select>
-                {error.keperluan && <p className="mt-1 text-sm text-aksen dark:text-red-300">{error.keperluan}</p>}
+                {error.keperluan && <p className="mt-1 text-sm text-aksen">{error.keperluan}</p>}
             </div>
             <div>
-                <label htmlFor="pesan" className="block font-semibold text-gray-800 dark:text-gray-100">Pesan</label>
+                <label htmlFor="pesan" className="block font-semibold text-foreground:text-gray-100">Pesan</label>
                 <textarea
                     id="pesan"
                     name="pesan"
@@ -98,7 +98,7 @@ export default function FormKontak() {
                     onChange={(e) => setPesan(e.target.value)}
                     placeholder="Tulis pesanmu di sini"
                     className={kelasInput}></textarea>
-                {error.pesan && <p className="mt-1 text-sm text-aksen dark:text-red-300">{error.pesan}</p>}
+                {error.pesan && <p className="mt-1 text-sm text-aksen">{error.pesan}</p>}
             </div>
             <div>
                 <button

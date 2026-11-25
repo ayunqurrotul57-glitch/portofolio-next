@@ -3,15 +3,21 @@
 import { useState, useEffect } from "react";
 
 export default function TombolTema() {
-    const [gelap, setGelap] = useState(false);
-    
+    // Inisialisasi state awal langsung mengecek localStorage tanpa butuh useEffect
+    const [gelap, setGelap] = useState(() => {
+        if (typeof window !== "undefined") {
+            return localStorage.getItem("tema") === "gelap";
+        }
+        return false;
+    });
 
     useEffect(() => {
-        if (localStorage.getItem("tema") === "gelap") {
+        if (gelap) {
             document.documentElement.classList.add("dark");
-            setGelap(true);
+        } else {
+            document.documentElement.classList.remove("dark");
         }
-    }, []);
+    }, [gelap]);
 
     function gantiTema() {
         const statusGelap = document.documentElement.classList.toggle("dark");

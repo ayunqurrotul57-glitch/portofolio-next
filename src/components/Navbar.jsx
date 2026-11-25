@@ -18,7 +18,7 @@ export default function Navbar () {
         <header className="bg-utama text-white">
             <nav className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
                 <Link href="/" className="text-xl font-bold">
-                    Qurrotul A'yun
+                    Qurrotul Ayun
                 </Link>
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
                     {menu.map((item) => {
