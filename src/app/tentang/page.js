@@ -49,7 +49,7 @@ export default function Tentang() {
       <section className="mt-10">
         <h2 className="mb-4 text-2xl font-bold text-primary">Jadwal Belajar</h2>
         <div className="overflow-hidden rounded-xl border border-border bg-card">
-          <table className="w-full text-left text-sm text-white">
+          <table className="w-full text-left text-sm">
             <thead className="bg-utama text-white">
               <tr>
                 <th className="px-6 py-4">Hari</th>

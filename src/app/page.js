@@ -5,12 +5,14 @@ import SkillCard from "@/components/SkillCard";
 import { buttonVariants } from "@/components/ui/button";
 import { supabase } from "@/lib/supabase";
 
+export const revalidate = 60;
+
 export default async function Home() {
   const { data: skills } = await supabase
     .from("skills")
     .select("*")
     .order("id");
-
+    
   const { data: proyekTerbaru } = await supabase
     .from("projects")
     .select("*")

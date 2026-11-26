@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Andi Pratama | Portofolio",
-    template: "%s | Andi Pratama",
+    default: "Qurrotul A'yun | Portofolio",
+    template: "%s | Qurrotul A'yun",
   },
-  description: "Portofolio Andi Pratama, siswa SMK calon Junior Web Developer.",
+  description: "Portofolio Qurrotul A'yun, siswi SMKN 1 Bangil calon Junior Web Developer.",
 };
 
 export default function RootLayout({ children }) {

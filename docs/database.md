@@ -1,11 +1,11 @@
 # Struktur Database Portofolio
-Database disimpan di Supabase, project `portofolio-andi` (region
+Database disimpan di Supabase, project `portofolio-ayun` (region
 Southeast Asia, Singapore). Alamat project dan
 publishable key disimpan di `.env.local`, yang tidak ikut di-commit
 karena tercantum di `.gitignore` (`.env*`).
 
 ## Tabel `projects`
-Daftar proyek portofolio Andi Pratama.
+Daftar proyek portofolio Qurrotul A'yun.
 | Kolom | Tipe | Keterangan |
 | --- | --- | --- |
 | `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |
@@ -33,7 +33,7 @@ dengan `now()` |
 | `pesan` | `text` | Isi pesan |
 RLS aktif tanpa policy, sehingga pengunjung tidak bisa membaca
 pesan. Policy `insert` dibuat di Minggu 15.
-Daftar keahlian Andi Pratama.
+Daftar keahlian Qurrotul A'yun.
 | Kolom | Tipe | Keterangan |
 | --- | --- | --- |
 | `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |
@@ -45,7 +45,7 @@ RLS aktif. Policy `Pengunjung boleh membaca keahlian`: peran `anon`
 boleh `select` semua baris.
 
 ## Tabel `skills`
-Daftar keahlian Andi Pratama.
+Daftar keahlian Qurrotul A'yun.
 | Kolom | Tipe | Keterangan |
 | --- | --- | --- |
 | `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |

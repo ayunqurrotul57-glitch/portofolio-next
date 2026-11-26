@@ -18,6 +18,15 @@ const badgeVariants = cva(
         ghost:
           "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
         link: "text-primary underline-offset-4 hover:underline",
+        html: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        css: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        javascript: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        "next.js": "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        
+        /* Tambahan varian untuk teks kategori gabungan yang ada di database-mu: */
+        "html, javascript, css": "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        "html-css-javascript": "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+        "html, css, javascript": "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
       },
     },
     defaultVariants: {
