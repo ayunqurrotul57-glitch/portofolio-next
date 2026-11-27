@@ -40,7 +40,6 @@ export default function FormKontak() {
 
   return (
     <form onSubmit={kirim} noValidate className="space-y-4">
-      {/* Nama Lengkap */}
       <div>
         <label htmlFor="nama" className="block font-semibold">
           Nama lengkap
@@ -57,7 +56,6 @@ export default function FormKontak() {
         {error.nama && <p className="mt-1 text-sm text-red-500">{error.nama}</p>}
       </div>
 
-      {/* Email */}
       <div>
         <label htmlFor="email" className="block font-semibold">
           Email
@@ -74,7 +72,6 @@ export default function FormKontak() {
         {error.email && <p className="mt-1 text-sm text-red-500">{error.email}</p>}
       </div>
 
-      {/* Nomor HP */}
       <div>
         <label htmlFor="hp" className="block font-semibold">
           Nomor HP
@@ -91,7 +88,6 @@ export default function FormKontak() {
         {error.hp && <p className="mt-1 text-sm text-red-500">{error.hp}</p>}
       </div>
 
-      {/* Keperluan */}
       <div>
         <label htmlFor="keperluan" className="block font-semibold">
           Keperluan
@@ -111,7 +107,6 @@ export default function FormKontak() {
         {error.keperluan && <p className="mt-1 text-sm text-red-500">{error.keperluan}</p>}
       </div>
 
-      {/* Pesan */}
       <div>
         <label htmlFor="pesan" className="block font-semibold">
           Pesan
@@ -132,7 +127,6 @@ export default function FormKontak() {
         Kirim Pesan
       </Button>
 
-      {/* Pesan Berhasil sekarang berada tepat di bawah tombol kirim */}
       {berhasil && (
         <p className="rounded-lg bg-green-100 p-3 text-green-800 dark:bg-green-900 dark:text-green-100">
           Terima kasih, {nama}! Pesanmu sudah lolos pemeriksaan.

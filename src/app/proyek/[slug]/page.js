@@ -22,7 +22,6 @@ export default async function DetailProyek({ params }) {
     notFound();
   }
 
-  // Parse string JSON dari kolom text Supabase menjadi Array
   const fitur = typeof item.fitur === "string" ? JSON.parse(item.fitur) : (item.fitur || []);
 
   return (

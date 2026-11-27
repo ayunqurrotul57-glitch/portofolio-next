@@ -32,15 +32,7 @@ export default function Kontak() {
                   >
                     github.com/ayunqurrotul57-glitch
                   </a>
-                </div>
-                <div>
-                  <span className="font-semibold block text-muted-foreground">Email</span>
-                  <a
-                    href="mailto:ayunqurrotul@example.com"
-                    className="text-primary hover:underline"
-                  >
-                    ayunqurrotul@example.com
-                  </a>
+                  
                 </div>
               </div>
             </CardContent>
